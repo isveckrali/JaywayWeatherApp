@@ -9,54 +9,62 @@
 import Foundation
 import UIKit
 
-struct WeatherDetailModel: Codable {
-    var coord:Coord?
-    var weather:[Weather]?
-    var base:String?
-    var main:Main?
-    var visibility:Int?
-    var wind:Wind?
-    var clouds:Clouds?
-    var dt:Int?
-    var sys:Sys?
-    var id:Int?
-    var name:String?
-    var cod:Int?
+struct WeatherDetailModel: Decodable {
+     var cod:String?
+     var message:Double?
+     var cnt: Int?
+     var list:[List]?
+     var city:City?
 }
 
-struct Weather:Codable {
-    var id:Int?
-    var main:String?
+struct List: Decodable {
+    var dt: Int?
+    var main: Main?
+    var weather: [Weather]?
+    var clouds: Clouds?
+    var wind: Wind?
+    var sys: Sys?
+    var dt_txt: String?
+}
+
+struct Weather: Decodable {
     var description:String?
     var icon:String?
+    var id:Int?
+    var main:String?
     
    
 }
 
-struct Main:Codable {
+struct Main: Decodable {
     var temp:Double?
-    var pressure:Int?
+    var pressure:Double?
     var humidity:Int?
     var temp_min:Double?
     var temp_max:Double
 }
 
-struct Wind:Codable {
+struct Wind: Decodable {
     var speed:Double?
-    var deg:Int?
+    var deg:Double?
 }
 
-struct Clouds:Codable {
+struct Clouds: Decodable {
     var all:Int?
     
 }
 
-struct Sys:Codable {
-    var type:Int?
+struct Sys: Decodable {
+    var pod:String?
+}
+
+struct City: Decodable {
     var id:Int?
-    var message:Double?
+    var name:String?
+    var coord:Coord?
     var country:String?
-    var sunrise:Int
+    var timezone:Int?
+    var sunrise:Int?
     var sunset:Int?
 }
 
@@ -87,4 +95,4 @@ extension Weather {
             return UIImage(named: "default")!
         }
     }
-}
+} 

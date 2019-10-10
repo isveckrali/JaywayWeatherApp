@@ -13,6 +13,14 @@ class WeatherListCell: UITableViewCell {
     @IBOutlet var lblCityName: UILabel!
     @IBOutlet var lblCountryCode: UILabel!
     
+    var weatherListModel:WeatherListModelView? {
+        didSet {
+            lblCityName.text = weatherListModel?.name
+            lblCountryCode.text = weatherListModel?.text
+        }
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,9 +31,5 @@ class WeatherListCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
-    func configureCell(weatherListModel: WeatherListModel) {
-        lblCityName.text = weatherListModel.name ?? ""
-        lblCountryCode.text = weatherListModel.country ?? ""
-    }
+    
 }
