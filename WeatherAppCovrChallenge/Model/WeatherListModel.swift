@@ -7,14 +7,14 @@
 //
 
 import Foundation
-struct WeatherListModel: Codable {
+struct WeatherListModel: Decodable {
     var id:Int?
     var name:String?
     var country:String?
     var coord:Coord?
 }
 
-struct Coord:Codable {
+struct Coord: Decodable {
     var lon: Double?
     var lat:Double?
 }
