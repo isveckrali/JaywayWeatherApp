@@ -35,7 +35,7 @@
 		1046298B22D4D2F3009EB053 /* WeatherDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailModel.swift; sourceTree = "<group>"; };
 		1046298D22D4F91C009EB053 /* WeatherListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListCell.swift; sourceTree = "<group>"; };
 		1046299322D51416009EB053 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		10CD00FB22D4A9C200DD5A0E /* WeatherAppCovrChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppCovrChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10CD00FB22D4A9C200DD5A0E /* Jayway Weather App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jayway Weather App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CD00FE22D4A9C200DD5A0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10CD010022D4A9C200DD5A0E /* WeatherListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListVC.swift; sourceTree = "<group>"; };
 		10CD010322D4A9C200DD5A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		10CD00FC22D4A9C200DD5A0E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				10CD00FB22D4A9C200DD5A0E /* WeatherAppCovrChallenge.app */,
+				10CD00FB22D4A9C200DD5A0E /* Jayway Weather App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,7 +253,7 @@
 			);
 			name = WeatherAppCovrChallenge;
 			productName = WeatherAppCovrChallenge;
-			productReference = 10CD00FB22D4A9C200DD5A0E /* WeatherAppCovrChallenge.app */;
+			productReference = 10CD00FB22D4A9C200DD5A0E /* Jayway Weather App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -518,7 +518,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mehmetcan.seyhan-gmail.com.WeatherAppCovrChallenge";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Jayway Weather App";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -536,7 +536,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mehmetcan.seyhan-gmail.com.WeatherAppCovrChallenge";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Jayway Weather App";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
